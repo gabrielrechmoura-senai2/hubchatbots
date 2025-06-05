@@ -7,7 +7,7 @@ body {
   margin: 0;
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
-  background:  linear-gradient(to bottom, #e0f0fd, #93bfe5);
+  background: linear-gradient(to bottom, #e0f0fd, #93bfe5);
 }
 
 main.chat-grid {
@@ -52,17 +52,44 @@ main.chat-grid {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .card-overlay h2 {
   margin: 0;
   font-size: 24px;
   color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .chat-card:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Estilos específicos para cada card com fundo gradiente */
+.chat-card.teddy {
+  background: linear-gradient(to right, #520000, #470101);
+}
+
+.chat-card.milk {
+  background: linear-gradient(to right, #265924, #588c52);
+}
+
+.chat-card.diamond {
+  background: linear-gradient(to right, #fdf39c, #f2d673);
+  color: black; /* texto escuro por causa do fundo claro */
+}
+
+.chat-card.transporter {
+  background: linear-gradient(to right, #6997b6, #2c6396);
+}
+
+.chat-card.hortlar {
+  background: linear-gradient(to right, #2f4b3f, #17a374);
+}
+
